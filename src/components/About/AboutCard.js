@@ -11,8 +11,6 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Hemnath </span>
             from <span className="purple"> Panruti,India.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
             I have completed BE in CSE at SREC.
             <br />
             <br />
