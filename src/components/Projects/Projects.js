@@ -25,8 +25,50 @@ function Projects() {
             <ProjectCard
               imgPath=''
               isBlog={false}
-              title="The Professional Courier"
-              description="Data and Document Management in Courier business, real time data entry"
+              title="The Professional Couriers – Courier Management Form Module"
+              description="Data and Document Management in Courier business, real time data entry
+• Developed a dynamic courier form UI (Add/Edit/Delete) using Formly.                                                                                      
+• Integrated AG Grid with advanced filtering, sorting and pagination.                                                                                                      
+• Followed modular Angular best practices for scalability."
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+        </Row>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath=''
+              isBlog={false}
+              title="Mandate Management System"
+              description=" Built a banking module to validate Aadhaar, UPI, and account details via secure NPCI/NSDL      
+integration.s"
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+        </Row>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath=''
+              isBlog={false}
+              title="Klassguru – Music School Management System "
+              description="• Built dynamic scheduling forms with centralized schema control.                                                                                    
+• Designed a responsive UI for staff and students.                                                                                                                             
+• Added schedule conflict validation with reusable components."
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+        </Row>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath=''
+              isBlog={false}
+              title="Production Parts Approval Process"
+              description=" Developed a document tracking system for supplier quality approvals."
               ghLink=""
               demoLink=""
             />
