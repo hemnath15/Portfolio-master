@@ -22,11 +22,13 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> HEMNATH M</strong>
+                <strong className="textColor"> HEMNATH M</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
+                Always think {" "}
+                <strong style={{ fontSize:"30px" }} className="textColor">Positive</strong>
               </div>
             </Col>
 

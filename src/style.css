@@ -1,9 +1,10 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
+  --section-background-color:  linear-gradient(
+  135deg,
+  rgba(2, 6, 23, 0.95),
+  rgba(15, 23, 42, 0.9),
+  rgba(6, 182, 212, 0.15)
+);
 
   --image-gradient: linear-gradient(
     to bottom left,
@@ -11,10 +12,10 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #00ccff;
 }
 
-.purple {
+.textColor {
   color: var(--imp-text-color) !important;
 }
 
@@ -97,7 +98,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #00ccff !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -155,6 +156,7 @@ button:focus {
 }
 
 .logo {
+  color: #00ccff;
   height: 1.4em !important;
   width: 2.5em !important;
 }
@@ -194,7 +196,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #00ccff;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -257,7 +259,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -265,11 +267,30 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 9rem 0 2rem ;
   color: whitesmoke;
   text-align: left;
 }
+/* Tablet */
+@media (max-width: 992px) {
+  .home-content {
+    padding: 7rem 0 2rem;
+  }
+}
 
+/* Mobile */
+@media (max-width: 768px) {
+  .home-content {
+    padding: 5rem 0 2rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .home-content {
+    padding: 4rem 0 2rem;
+  }
+}
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
@@ -280,18 +301,15 @@ button:focus {
   padding-left: 45px !important;
 }
 
-.main-name {
-  color: #cd5ff8;
-}
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #be6adf !important;
+  font-size: 2.1em !important;
+  color: #00ccff !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #ffffff !important;
 }
 
 @media (max-width: 767px) {
@@ -319,13 +337,13 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  /* padding-bottom: 70px !important; */
+  /* padding-top: 70px !important; */
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  /* padding-top: 100px !important; */
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -371,7 +389,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #00ccff;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -379,13 +397,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #00ccff;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #00ccff;
+  box-shadow: 0 0 5px #00ccff;
+  text-shadow: 0 0 2px #00ccff;
 }
 
 .social-icons {
@@ -395,7 +413,7 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #1f9dbd !important;
 }
 
 /* --------- */
@@ -439,7 +457,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #00ccff !important;
 }
 /* --------- */
 /* Projects */
@@ -460,7 +478,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 20px rgba(0, 204, 255, 0.35) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -470,7 +488,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 20px rgba(10, 224, 285, 0.46) !important;
 }
 
 .blog-card {
@@ -555,7 +573,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid rgba(3, 165, 252, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -563,6 +581,30 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+}
+
+.skill-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+}
+
+.skill-icon{
+  font-size:4rem;
+  color:white;
+}
+
+.skill-name{
+  font-size:1.15rem;
+  font-weight:600;
+  color:#E5E7EB;
+
+  margin:0;
+
+  letter-spacing:.5px;
+
+  text-align:center;
 }
 
 @media (max-width: 767px) {
@@ -574,7 +616,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid rgba(0, 217, 255, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -611,9 +653,20 @@ button:focus {
 }
 
 .resume {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  display: flex;
   justify-content: center;
+}
+
+.pdf-page {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.react-pdf__Page {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .resume-left {
@@ -727,7 +780,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #00ccff !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -735,9 +788,22 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #02cafd !important;
+  border-color: #00ccff !important;
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+.downloadBtn{
+   max-width: 250px;
+    background-color: #00ccff !important;
+    border-color: #00ccff !important ;
+    color: #ffffff !important;
+}
+
+.downloadBtn:hover{
+  transform: translateY(-2px) !important;
+  background-color: #ffffff !important; 
+  color: #000000 !important;
+  box-shadow: 0 0 15px #00ccff !important;
 }
