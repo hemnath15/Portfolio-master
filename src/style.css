@@ -33,10 +33,12 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
+  color: #00ccff;
   background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
+  background-image: url(./Assets/spinning-dots.svg);
   background-repeat: no-repeat;
   background-position: center;
+background-size: 100px 100px
 }
 
 #preloader-none {
@@ -58,18 +60,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #396975;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: #00ccffb6;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: #00ccff;
   border-radius: 12px;
 }
 
@@ -156,7 +158,7 @@ button:focus {
 }
 
 .logo {
-  color: #00ccff;
+  /* color: #00ccff ; */
   height: 1.4em !important;
   width: 2.5em !important;
 }
@@ -463,32 +465,150 @@ button:focus {
 /* Projects */
 /* --------- */
 .project-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 70px;
+  background-image: var(--section-background-color);
+  overflow: hidden;
+}
+
+.project-heading {
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.project-section p {
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
 }
 
 .project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
+  padding: 18px !important;
+  display: flex;
 }
 
 .project-card-view {
-  box-shadow: 0 4px 20px rgba(0, 204, 255, 0.35) !important;
-  color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(16, 25, 40, 0.75) !important;
+  border: 1px solid rgba(0, 204, 255, 0.18);
+
+  border-radius: 18px;
+
+  color: #fff !important;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 8px 24px rgba(0, 204, 255, 0.18);
+
+  transition: all .35s ease;
 }
+
 .project-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 20px rgba(10, 224, 285, 0.46) !important;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 204, 255, .35);
+  border-color: #00ccff;
+}
+
+.project-card-view .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card-view .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.project-card-view .card-text {
+  color: rgba(255,255,255,.82);
+  line-height: 1.7;
+  font-size: .95rem;
+  flex-grow: 1;
+}
+
+.project-card-view .btn-primary {
+  margin-top: auto;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 991px) {
+
+  .project-section{
+      padding-top:110px;
+  }
+
+  .project-heading{
+      font-size:2.2rem;
+  }
+
+  .project-card{
+      padding:15px !important;
+  }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:767px){
+
+  .project-section{
+      padding-top:90px;
+      padding-bottom:50px;
+  }
+
+  .project-heading{
+      font-size:1.9rem;
+  }
+
+  .project-section p{
+      font-size:.95rem;
+      padding:0 10px;
+  }
+
+  .project-card{
+      padding:12px !important;
+  }
+
+  .project-card-view{
+      border-radius:15px;
+  }
+
+  .project-card-view .card-title{
+      font-size:1.1rem;
+  }
+
+  .project-card-view .card-text{
+      font-size:.9rem;
+      line-height:1.6;
+  }
+
+}
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width:480px){
+
+  .project-heading{
+      font-size:1.6rem;
+  }
+
+  .project-card{
+      padding:10px !important;
+  }
+
 }
 
 .blog-card {
@@ -522,10 +642,12 @@ button:focus {
   box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
 }
 
-.card-img-top {
-  padding: 20px !important;
-  opacity: 0.8 !important;
-  border-radius: 10px !important;
+.project-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  display: block;
+  margin: 20px auto;
 }
 
 .blog-img {
@@ -548,12 +670,6 @@ button:focus {
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
-}
-.project-heading {
-  color: white !important;
-  font-size: 2.3em !important;
-  font-weight: 500 !important;
-  padding-top: 10px !important;
 }
 
 /* --------- */

@@ -5,10 +5,8 @@ import myPhoto from "../../Assets/myphoto.png"
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+  AiFillGithub
+}from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -38,7 +36,7 @@ function Home2() {
   <i>
     <b className="textColor">
       {" "}
-      Angular, TypeScript, JavaScript, HTML, CSS
+      Angular, TypeScript, JavaScript , HTML , CSS , REST APIs , MongoDB 
     </b>
   </i>{"  "}
    and building scalable, responsive, and user-friendly interfaces.
@@ -55,9 +53,9 @@ function Home2() {
   <br />
   <br />
   I also enjoy working with
-  <b className="textColor"> Node.js</b>, integrating
+  <b className="textColor"> Node.js</b>, 
   <i>
-    <b className="textColor"> REST APIs</b>
+    <b className="textColor"> React</b>
   </i>
   , and expanding my knowledge in emerging technologies and full-stack development.
 </p>
@@ -85,7 +83,7 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href=""
                   target="_blank"
@@ -94,10 +92,10 @@ function Home2() {
                 >
                   <AiOutlineTwitter />
                 </a>
-              </li>
+              </li> */}
               <li className="social-icons">
                 <a
-                  href=""
+                  href="https://www.linkedin.com/in/hemnath-m-a79998377"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -105,7 +103,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href=""
                   target="_blank"
@@ -114,7 +112,7 @@ function Home2() {
                 >
                   <AiFillInstagram />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </Col>
         </Row>

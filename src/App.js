@@ -19,7 +19,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import UnderConstruction from "./components/UnderConstruction";
 function App() {
   const [load, upadateLoad] = useState(true);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);

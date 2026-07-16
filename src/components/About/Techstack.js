@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Row, Col } from "react-bootstrap";
-import { DiAngularSimple, DiJavascript1,  DiReact, DiCss3,DiHtml5,DiMongodb ,DiFirebase,DiPython} from "react-icons/di";
+import { DiAngularSimple, DiJavascript1,  DiReact, DiCss3,DiHtml5,DiMongodb ,DiFirebase,DiPython,DiPostgresql,DiNodejs} from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 
 const iconVariants = {
@@ -18,10 +18,11 @@ function Techstack() {
   { id: 2, icon: <DiHtml5 color="#E34F26" />, name: "HTML" },
   { id: 3, icon: <DiCss3 color="#1572B6" />, name: "CSS" },
   { id: 4, icon: <SiTypescript color="#3178C6" />, name: "TypeScript" },
-  { id: 5, icon: <DiReact color="#61DAFB" />, name: "React" },
-  { id: 6, icon: <DiMongodb color="#47A248" />, name: "MongoDB" },
-  { id: 7, icon: <DiFirebase color="#FFCA28" />, name: "Firebase" },
-  { id: 8, icon: <DiPython color="#3776AB" />, name: "Python" },
+  { id: 5, icon: <DiNodejs color="#3776AB" />, name: "NodeJs" },
+  { id: 6, icon: <DiReact color="#61DAFB" />, name: "React" },
+  { id: 7, icon: <DiMongodb color="#47A248" />, name: "MongoDB" },
+  { id: 8, icon: <DiPostgresql color="#47A248" />, name: "Postgresql" },
+  { id: 9, icon: <DiPython color="#3776AB" />, name: "Python" },
   ];
 
   return (

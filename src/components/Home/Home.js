@@ -27,11 +27,8 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
-                Always think {" "}
-                <strong style={{ fontSize:"30px" }} className="textColor">Positive</strong>
               </div>
             </Col>
-
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}

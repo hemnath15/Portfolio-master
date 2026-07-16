@@ -12,8 +12,9 @@ import {
   SiRender,
   SiBitbucket,
   SiCloudflare,
-  SiFilezilla
+  SiFilezilla,
 } from "react-icons/si";
+import { DiFirebase} from "react-icons/di";
 import { motion } from "framer-motion";
 const iconVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -35,6 +36,7 @@ function Toolstack() {
   { id: 8, icon: <SiBitbucket color="#0052CC" />, name: "Bitbucket" },
   { id: 9, icon: <SiCloudflare color="#F38020" />, name: "Cloudflare" },
   { id: 10, icon: <SiFilezilla color="#BF0000" />, name: "FileZilla" },
+  { id: 11, icon: <DiFirebase color="#FFCA28" />, name: "Firebase" },
     ];
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px", display: "flex", flexWrap: "wrap" }}>
