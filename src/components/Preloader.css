@@ -1,0 +1,115 @@
+#preloader,
+#preloader-gone {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #121212;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999999;
+}
+
+
+/* =========================
+   PRELOADER
+========================= */
+
+#preloader {
+  transform: translateY(0);
+
+  transition:
+    transform 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+
+/* =========================
+   PRELOADER EXIT
+========================= */
+
+#preloader-gone {
+  transform: translateY(-100%);
+
+  transition:
+    transform 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.loader-content {
+  text-align: center;
+  color: #ffffff;
+  font-family: sans-serif;
+
+  opacity: 1;
+  transform: translateY(0);
+
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+
+/* Content fades first */
+
+.loader-content.content-gone {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+
+/* =========================
+   COUNTER
+========================= */
+
+.counter-number {
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+
+/* =========================
+   NAME
+========================= */
+
+.name-box h2 {
+  font-size: 1.2rem;
+  letter-spacing: 6px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+
+/* =========================
+   RED LINE
+========================= */
+
+.red-line {
+  width: 150px;
+  height: 2px;
+  background-color: #e50914;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   NO SCROLL
+========================= */
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
